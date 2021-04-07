@@ -5,20 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metronome</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="tip">
-        (Click anywhere to hear sound...)
-    </div>
-
+<body id="body">
     <div class="metronome">
         <div class="background-left"></div>
         <div class="background-center">
             <div class="core"></div>
         </div>
+        
         <div class="background-right"></div>
         <div class="arm"></div>
+    </div>
+    <br>
+    <br>
+    <div class="checks">
+
+    <input type="checkbox" class="check" name="metronome" id="metro">
+    <label for="metronome">METRONOME</label>
+    
+    <br>
+    
+
+    <input type="checkbox" class="check" name="kick drum" id="kick">
+    <label for="kick drum">Bass Drum</label>
+    
+    <br>
+
+    <input type="checkbox" class="check" name="snare drum" id="snare">
+    <label for="snare drum">Snare Drum</label>
+    
+    <br>
+
+    <input type="checkbox" class="check" name="hi hat" id="hi">
+    <label for="hi hat">Hi-Hat</label>
+    <br>
+
+    <br> 
+    <br>
+
+    </div>
+
+    <div id="numberContainer">
+        <input type="number" id="metro_input" name="number"
+        min="1" max="4" placeholder="metro">
+
+        <input type="number" id="kick_input" name="number"
+        min="1" max="4"  placeholder="kick">
+
+        <input type="number" id="snare_input" name="number"
+        min="1" max="4"  placeholder="snare">
+
+        <input type="number" id="hiHat_input" name="number"
+        min="1" max="4"  placeholder="hi-hat">
+
+    </div>
+
+    <label for="box"> COUNT 1...2...3...4...</label>
+    <div class="box" ></div>
+    <div class="tip">
+        <h3> <a href="https://www.youtube.com/watch?v=3AZz9TSjZCM">Drum Battle!</a></h3>
     </div>
 
     <script src="main.js"></script>
